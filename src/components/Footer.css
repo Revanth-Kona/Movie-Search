@@ -1,0 +1,25 @@
+/* Footer Styles */
+.Das-footer {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 20px 10px;
+    text-align: center;
+    width: 98.7%;
+    font-weight: 600;
+}
+
+.Das-footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .Das-footer{
+        width: 97.4vw;
+    }
+}
+@media (max-width: 480px) {
+    .Das-footer{
+        width: 93.8%;
+    }
+}

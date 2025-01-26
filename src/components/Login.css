@@ -1,0 +1,205 @@
+/* General Reset */
+.log {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(/img/BG2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar-logo {
+    height: 50px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 50px 0px 10px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navbar-links a.active-link {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar-links a:hover {
+    color: #ffd700;
+    padding: 10px;
+    background-color: #333;
+}
+
+/* Form Styles */
+.loginform h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #007BFF;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.loginform {
+    max-width: 400px;
+    margin: 20px auto;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    background: none;
+    border: 12px solid white;
+}
+
+.loginform label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffea00;
+    font-size: 18px;
+}
+
+.loginform input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: transparent;
+    color: white;
+}
+
+.loginform button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+
+.loginform button:hover {
+    background-color: #0056b3;
+}
+
+.loginform p{
+    text-align: center;
+    color: lightskyblue;
+}
+.loginform a{
+    text-decoration: none;
+    color: lightgreen;
+}
+/* Footer Styles */
+.loginfooter {
+    background-color: black;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 65px;
+}
+
+.lohinfooter-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.loginfooter p {
+    margin: 10px 0;
+    font-size: 14px;
+    font-size: 20px;
+}
+
+.loginfooter-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.loginfooter-links li {
+    margin: 0;
+}
+
+.loginfooter-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.loginfooter-links a:hover {
+    color: #ffd700; /* Gold/yellow hover effect */
+}
+
+.loginfooter-links a.active-footer-link {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 5px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        margin: 5px 0;
+    }
+}

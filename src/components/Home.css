@@ -1,0 +1,233 @@
+/* General container styling */
+.HMCON {
+    margin: 0;
+    background: linear-gradient(to right, #a6a6a6, #ffffff);
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.Hnavbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: transparent;
+    background-image: url(/img/NA4.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 30px 40px;
+}
+
+.Hnavbar-logo {
+    height: 60px;
+    width: 125px;
+    border-radius: 50%;
+}
+
+.Hnavbar-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* Enable wrapping for smaller screens */
+    margin: 0;
+    padding: 0;
+}
+
+.Hnavbar-links li {
+    margin: 0 10px;
+    /* Reduce margin for better fit */
+}
+
+.Hnavbar-links a {
+    text-decoration: none;
+    margin: 5px 12px;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* Slightly smaller font for readability */
+}
+
+.Hnavbar-links a:hover {
+    border: 2px solid #333;
+    color: #ffd700;
+    padding: 8px;
+    background-color: #333;
+}
+
+/* Header Text */
+.HMCON h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    font-weight: 800;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    color: #333;
+    text-align: center;
+    height: 80vh;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive Card Styles */
+.cardiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cardiv img {
+    height: 65vh;
+    /* Reduce size for smaller screens */
+    max-width: 100%;
+    /* Ensure it fits the container */
+    object-fit: cover;
+}
+
+.cardcon:hover {
+    background: none;
+}
+
+.cardiv .MuiCard-root {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardiv .MuiCard-root:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .HMCON{
+        width: 99.5%;
+    }
+    .Hnavbar {
+        flex-direction: row;
+        /* Stack items vertically */
+        height: 40vh;
+        padding-bottom:  160px;
+        background-image: url(/img/7683.png);
+    }
+
+    .Hnavbar-links {
+        flex-direction: row;
+    }
+
+    .Hnavbar-links li {
+        margin: 5px 0;
+        padding: 0px 0px 0px 10px;
+        /* Adjust spacing for vertical layout */
+    }
+
+    .Hnavbar-links li a {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+    }
+
+    .cardiv img {
+        height: 30vh;
+        /* Reduce card image height */
+    }
+    .about-section{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        height: 120vh;
+    }
+    .about-image{
+        margin-left: 50px;
+    }
+    .cardiv img{
+        height: 80vh;
+    }
+
+    .HM-footer {
+        padding: 15px 5px;
+        /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .HMCON{
+        width: 100%;
+    }
+    .Hnavbar {
+        display: flex;
+        flex-direction: column;
+        background-image: url('/img/NA3.jpg');
+        height: 35vh;
+        width: 100%;
+        padding-bottom: 70px;
+    }
+
+    .Hnavbar-links {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 38px;
+    }
+
+    .Hnavbar-links a {
+        font-size: 01rem;
+        /* Reduce font size for smaller devices */
+    }
+    .about-section{
+        display: flex;
+    }
+    .about-image{
+        width: 75vw;
+        margin-right: 50px;
+        height: 200px;
+    }
+
+    .HMCON h2 {
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .cardiv img {
+        height: 85vh;
+        /* Further reduce image size */
+    }
+}

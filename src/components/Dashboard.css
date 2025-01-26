@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+BE+WAL:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sarpanch:wght@400;500;600;700;800;900&family=Sevillana&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Yuji+Mai&display=swap');
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    font-family: "Doto", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* Navbar Styles */
+.Das-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 10px 20px;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.Das-navbar-logo {
+    height: 50px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.Das-navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.Das-navbar-links li {
+    margin: 10px 20px;
+}
+
+.Das-navbar-search {
+    margin-left: 20px;
+}
+
+.Das-navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+
+}
+
+.Das-navbar-links a.active-link {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.Das-navbar-links a:hover {
+    color: #ffd700;
+    padding: 10px;
+    background-color: #333;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.avatar-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    /* background-color: white; */
+    background: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dropdown-menu button {
+    display: block;
+    width: 100%;
+    padding: 5px 20px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+    background-color: #000000;
+}
+
+
+/* Main container */
+.Das-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
+    background-image: url(img/BG3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+
+/* Content styling */
+.Das-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.movie-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.movie-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.movie-card p {
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+.movie-image {
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+}
+
+/* Movie card styles */
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.card li {
+    list-style-type: none;
+    background-color: rgba(4, 4, 4, 0.5);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 20.5px;
+    margin: 10px 0;
+    color: #ee0000;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #2980b9;
+}
+
+/* Rating styles */
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.custom-rating .MuiRating-iconFilled {
+    color: #FFD700;
+}
+
+.movie-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 cards per row */
+    gap: 20px;
+    padding: 10px;
+}
+
+.movie-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-image {
+    width: 100%;
+    height: 50vh;
+    border-radius: 5px;
+}
+
+.movie-trailer-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .Das-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Das-navbar-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .Das-navbar-left,
+    .Das-navbar-links {
+        width: 100%;
+    }
+
+    .Das-navbar-search {
+        margin-top: 10px;
+    }
+
+    .Das-navbar-links li {
+        margin: 5px 0;
+    }
+
+    .card {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    .movie-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 4 cards per row */
+        gap: 20px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Das-navbar-search{
+        width: 200px;
+    }
+    .Das-navbar {
+        padding: 10px;
+    }
+
+    .Das-navbar-links a {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .card li {
+        padding: 10px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+    .movie-cards{
+        display: flex;
+    }
+}
